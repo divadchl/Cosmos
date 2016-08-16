@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/mi_ActionBar"
+        layout="@layout/actionbar" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+
+            android:id="@+id/imagen"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp" />
+
+        <Button
+
+            android:id="@+id/btnRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

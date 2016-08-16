@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cosmos</string>
+    <string name="facebook_app_id">1069912946429640</string>
+    <string name="copyright">by</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

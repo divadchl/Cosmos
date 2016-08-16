@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:orientation="vertical"
+    tools:context="mx.com.serviciosinformaticosintegrales.nasa.DetailActivity">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgFoto"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        fresco:actualImageScaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full name camera:"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/txvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_span="2"
+            android:layout_toRightOf="@+id/t1"
+            android:text="title"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:text="Id:"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/txvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:layout_toEndOf="@+id/t2"
+            android:layout_toRightOf="@+id/t2"
+            android:text="ID"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:text="Total photos:"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/txvTotalPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:layout_toEndOf="@+id/t4"
+            android:layout_toRightOf="@+id/t4"
+            android:text="TOTAL DE FOTOS"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t3"
+            android:text="Landing date:"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/txvfLanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t3"
+            android:layout_toEndOf="@+id/t4"
+            android:layout_toRightOf="@+id/t4"
+            android:text="Fecha aterrizaje"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t4"
+            android:text="Earth date:"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/txvfTierra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t4"
+            android:layout_toEndOf="@+id/t5"
+            android:layout_toRightOf="@+id/t5"
+            android:text="fecha tierra"
+            android:textColor="@color/colorBlanco"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

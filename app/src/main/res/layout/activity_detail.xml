@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.com.serviciosinformaticosintegrales.nasa.DetailActivity">
+    <include
+        android:id="@+id/mi_ActionBar"
+        layout="@layout/actionbar"/>
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/txvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_apod_image"
+        android:text="title"
+        android:textStyle="bold" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgFoto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        fresco:actualImageScaleType="fitXY" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Hola"
+                    android:id="@+id/txvNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="right"
+                    android:text="hola"
+                    android:id="@+id/txvfTierra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
