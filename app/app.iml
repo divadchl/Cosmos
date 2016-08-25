@@ -43,6 +43,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/old_versionDebug/jni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/old_versionDebug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/old_versionDebug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/old_version/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/old_version/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/old_version/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/old_version/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/old_version/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/old_version/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/old_version/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testOld_versionDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testOld_versionDebug/resources" type="java-test-resource" />
@@ -52,12 +58,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testOld_versionDebug/jni" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testOld_versionDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testOld_versionDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/old_version/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/old_version/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/old_version/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/old_version/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/old_version/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/old_version/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/old_version/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/old_version/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/old_version/assets" type="java-resource" />
@@ -184,8 +184,8 @@
     <orderEntry type="library" exported="" name="imagepipeline-base-0.12.0" level="project" />
     <orderEntry type="library" exported="" name="facebook-android-sdk-4.14.1" level="project" />
     <orderEntry type="library" exported="" name="retrofit-2.1.0" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-24.0.0" level="project" />
     <orderEntry type="library" exported="" name="converter-gson-2.0.2" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-24.0.0" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.3.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-8.2.1" level="project" />

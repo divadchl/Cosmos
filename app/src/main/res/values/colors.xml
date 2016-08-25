@@ -2,9 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#4CAF50</color>
+    <color name="colorAccent">#009688</color>
     <color name="coloTexto">#FFFFFF</color>
     <color name="colorBlanco">#FFFF</color>
     <color name="colorFondo">#000000</color>
     <color name="color">#15890c</color>
+    <color name="button_normal">#929392</color>
+    <color name="button_pressed">#c0c1c0</color>
+    <color name="dialog_divider">@android:color/black</color>
 </resources>

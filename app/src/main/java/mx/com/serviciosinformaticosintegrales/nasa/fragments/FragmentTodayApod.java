@@ -1,5 +1,6 @@
 package mx.com.serviciosinformaticosintegrales.nasa.fragments;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +13,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,6 +45,7 @@ public class FragmentTodayApod extends Fragment {
     TextView txvCopyright;
     String imgURL;
     //View view;
+    private Dialog customDialog = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,10 +94,6 @@ public class FragmentTodayApod extends Fragment {
 
             }
         });
-
-
-
-
         return view;
     }
 
@@ -112,7 +112,8 @@ public class FragmentTodayApod extends Fragment {
                 shareText("Hola Mundo " + imgURL);
                 return true;
             case R.id.favorites_today_apod:
-                saveFavorities();
+                showDialog(getView());
+
                 Snackbar.make(getView(), "Se agregó a favoritos", Snackbar.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
@@ -135,6 +136,47 @@ public class FragmentTodayApod extends Fragment {
         itemDataSource.saveItem(favorities);
     }
 
+    public void showDialog(View view)
+    {
+        // con este tema personalizado evitamos los bordes por defecto
+        customDialog = new Dialog(getActivity(), R.style.Theme_Dialog_Translucent);
+        //deshabilitamos el título por defecto
+        customDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //obligamos al usuario a pulsar los botones para cerrarlo
+        customDialog.setCancelable(false);
+        //establecemos el contenido de nuestro dialog
+        customDialog.setContentView(R.layout.dialog);
+
+        TextView titulo = (TextView) customDialog.findViewById(R.id.titulo);
+        titulo.setText(R.string.titulo_dialog);
+
+        TextView contenido = (TextView) customDialog.findViewById(R.id.contenido);
+        contenido.setText(R.string.message_favorites);
+
+        ((Button) customDialog.findViewById(R.id.aceptar)).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view)
+            {
+                customDialog.dismiss();
+                saveFavorities();
+                Snackbar.make(view, R.string.aceptar, Snackbar.LENGTH_SHORT).show();
+            }
+        });
+
+        ((Button) customDialog.findViewById(R.id.cancelar)).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view)
+            {
+                customDialog.dismiss();
+                Snackbar.make(view, R.string.cancelar, Snackbar.LENGTH_SHORT).show();
+
+            }
+        });
+
+        customDialog.show();
+    }
 
 
 }
