@@ -9,5 +9,6 @@
     <string name="cancelar">Cancelar</string>
     <string name="titulo_dialog">Add to Favorites</string>
     <string name="message_favorites">You want to add to Favorites?</string>
-
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>

@@ -33,7 +33,7 @@ public class RecyclerViewFavoritiesFragment extends Fragment {
 
         rvFavorities = (RecyclerView) view.findViewById(R.id.rvFavorities);
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
-        llm.setOrientation(LinearLayoutManager.HORIZONTAL);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
 
         rvFavorities.setLayoutManager(llm);
         //llamar a la bd

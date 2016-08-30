@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@xml/dialog_button_selector"
-            android:text="@android:string/ok"
+            android:text="@string/ok"
             android:textColor="@android:color/white" />
 
         <Button
@@ -57,7 +57,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@xml/dialog_button_selector"
-            android:text="@android:string/cancel"
+            android:text="@string/cancel"
             android:textColor="@android:color/white" />
     </LinearLayout>
 

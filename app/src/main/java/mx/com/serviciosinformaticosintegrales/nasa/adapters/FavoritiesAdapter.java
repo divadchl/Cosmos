@@ -52,9 +52,9 @@ public class FavoritiesAdapter extends RecyclerView.Adapter<FavoritiesAdapter.Fa
             @Override
             public void onClick(View v) {
 
-                Bitmap bitmap = descargarImagen(favorities.getFoto());
-                String ruta = guardarImagen(activity, favorities.getTitulo(), bitmap);
-                Snackbar.make(v, ruta, Snackbar.LENGTH_INDEFINITE).show();
+                //Bitmap bitmap = descargarImagen(favorities.getFoto());
+                //String ruta = guardarImagen(activity, favorities.getTitulo(), bitmap);
+                //Snackbar.make(v, ruta, Snackbar.LENGTH_INDEFINITE).show();
             }
         });
     }

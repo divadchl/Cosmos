@@ -14,11 +14,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
 
-        </activity>
         <activity android:name=".RecyclerviewActivity"></activity>
-        <activity android:name=".DetailActivity" />
         <activity android:name=".login.FBLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

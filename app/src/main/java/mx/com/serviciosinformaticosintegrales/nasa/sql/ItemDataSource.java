@@ -30,11 +30,13 @@ public class ItemDataSource {
     public List<Favorities> getAllItems()
     {
         List<Favorities> favoritiesList = new ArrayList<>();
-        Cursor cursor = db.query(SqliteHelper.TABLE_NAME,null,null,null,null,null,null);
+        Cursor cursor = db.query(true, SqliteHelper.TABLE_NAME,new String[] {SqliteHelper.COLUMN_TITULO, SqliteHelper.COLUMN_FOTO},
+                                    null,null, null,null,null,null);
+        //Cursor cursor = db.execSQL("SELECT DISTINCT " + SqliteHelper.COLUMN_TITULO + ", " + SqliteHelper.COLUMN_FOTO +"");
         while(cursor.moveToNext())
         {
             Favorities favorities= new Favorities();
-            favorities.setId(cursor.getInt(cursor.getColumnIndexOrThrow(SqliteHelper.COLUMN_ID)));
+            //favorities.setId(cursor.getInt(cursor.getColumnIndexOrThrow(SqliteHelper.COLUMN_ID)));
             favorities.setTitulo(cursor.getString(cursor.getColumnIndexOrThrow(SqliteHelper.COLUMN_TITULO)));
             favorities.setFoto(cursor.getString(cursor.getColumnIndexOrThrow(SqliteHelper.COLUMN_FOTO)));
             favoritiesList.add(favorities);
