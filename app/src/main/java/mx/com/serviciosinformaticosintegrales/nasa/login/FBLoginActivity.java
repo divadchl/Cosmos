@@ -39,17 +39,17 @@ public class FBLoginActivity extends AppCompatActivity implements FacebookCallba
             //onActivityResult();
             //startActivity(intent);
             startActivity(new Intent(this, RecyclerviewActivity.class));
-            Snackbar.make(findViewById(android.R.id.content), "Login2", Snackbar.LENGTH_SHORT).show();
+            //Snackbar.make(findViewById(android.R.id.content), "Login2", Snackbar.LENGTH_SHORT).show();
         }
         else
         {
-            Snackbar.make(findViewById(android.R.id.content), "Login3", Snackbar.LENGTH_SHORT).show();
+            //Snackbar.make(findViewById(android.R.id.content), "Login3", Snackbar.LENGTH_SHORT).show();
         }
     }
 
     @Override
     public void onSuccess(LoginResult loginResult) {
-        Snackbar.make(findViewById(android.R.id.content), "Login", Snackbar.LENGTH_SHORT).show();
+        //Snackbar.make(findViewById(android.R.id.content), "Login", Snackbar.LENGTH_SHORT).show();
         startActivity(new Intent(this, RecyclerviewActivity.class));
     }
 
@@ -60,7 +60,7 @@ public class FBLoginActivity extends AppCompatActivity implements FacebookCallba
 
     @Override
     public void onError(FacebookException error) {
-        Snackbar.make(findViewById(android.R.id.content), error.getMessage(), Snackbar.LENGTH_SHORT).show();
+        //Snackbar.make(findViewById(android.R.id.content), error.getMessage(), Snackbar.LENGTH_SHORT).show();
     }
 
     @Override

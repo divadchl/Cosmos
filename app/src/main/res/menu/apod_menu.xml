@@ -11,6 +11,6 @@
         android:id="@+id/favorites_today_apod"
         android:icon="@android:drawable/btn_star"
         android:orderInCategory="20"
-        android:title="favorities"
+        android:title="favorites"
         app:showAsAction="always" />
 </menu>

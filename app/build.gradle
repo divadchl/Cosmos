@@ -17,17 +17,18 @@ android {
     signingConfigs {
         debug.initWith(signingConfigs.debug)
         release {
-            /*
-            storeFile file("release.keystore")
-            storePassword "secretpassword"
-            keyAlias "gradleforandroid"
-            keypassword "secretpassword"
-             */
+/*
+            storeFile file("/Users/David/Documents/Diplomado/Keystore")
+            storePassword "app30717a5"
+            keyAlias "Cosmos"
+            keypassword "app30717a5"
+*/
         }
     }
 
     buildTypes {
         release {
+            //debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "String", "URL", "\"https://api.nasa.gov\""
@@ -35,6 +36,7 @@ android {
         }
 
         debug {
+            //debuggable false
             minifyEnabled true
             buildConfigField "String", "URL", "\"https://api.nasa.gov\""
         }

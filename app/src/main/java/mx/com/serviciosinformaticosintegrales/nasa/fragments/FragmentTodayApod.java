@@ -109,7 +109,7 @@ public class FragmentTodayApod extends Fragment {
         {
             case R.id.share_today_apod:
                 //Snackbar.make(getView(), "Se agregó a favoritos", Snackbar.LENGTH_SHORT).show();
-                shareText("Hola Mundo " + imgURL);
+                shareText("Visit " + imgURL);
                 return true;
             case R.id.favorites_today_apod:
                 showDialog(getView());
