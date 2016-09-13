@@ -71,7 +71,7 @@ public class RecyclerviewActivity extends AppCompatActivity
 
         /*try {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "mx.com.serviciosinformaticosintegrales.nasa",
+                    "mx.com.serviciosinformaticosintegrales.old",
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
